@@ -37,14 +37,57 @@ var_dump($increment);
  */
 fullStackPHPClassSession("comparação", __LINE__);
 
+$relatedA = 5;
+$relatedB = "5";
+$relatedC = 10;
+
+$related = [
+   "a == b" =>  ($relatedA == $relatedB),
+   "a === b" =>  ($relatedA === $relatedB),
+   "a != b" =>  ($relatedA != $relatedB),
+   "a !== b" =>  ($relatedA !== $relatedB),
+   "a > c" =>  ($relatedA > $relatedC),
+   "a < c" =>  ($relatedA < $relatedC),
+   "a >= b" =>  ($relatedA >= $relatedB),
+   "a >= c" =>  ($relatedA >= $relatedC),
+   "a <= c" =>  ($relatedA >= $relatedC)
+];
+
+var_dump($related);
 
 /**
  * [ lógicos ] https://php.net/manual/pt_BR/language.operators.logical.php
  */
 fullStackPHPClassSession("lógicos", __LINE__);
 
+$logicA = true;
+$logicB = false;
+
+$logic = [
+    "a && b" => ($logicA && $logicB),
+    "a || b" => ($logicA || $logicB),
+    "a" => ($logicA),
+    "!a" => (!$logicA),
+    "!b" => (!$logicB)
+
+];
+
+var_dump($logic);
 
 /**
  * [ aritiméticos ] https://php.net/manual/pt_BR/language.operators.arithmetic.php
  */
 fullStackPHPClassSession("aritiméticos", __LINE__);
+
+$calcA = 5;
+$calcB = 10;
+
+$calc = [
+    "a + b" => ($calcA + $calcB),
+    "a - b" => ($calcA - $calcB),
+    "a * b" => ($calcA * $calcB),
+    "a / b" => ($calcA / $calcB),
+    "a % b" => ($calcA % $calcB)
+];
+
+var_dump($calc);
