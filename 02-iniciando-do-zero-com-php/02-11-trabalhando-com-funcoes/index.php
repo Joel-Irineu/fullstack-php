@@ -7,20 +7,38 @@ fullStackPHPClassName("02.11 - Trabalhando com funções");
  */
 fullStackPHPClassSession("functions", __LINE__);
 
+require __DIR__."/functions.php";
+
+var_dump(functionName("irineu", "vasco", "gabriel"));
+var_dump(functionName("Livia", "Savio", "Ednês"));
+
+var_dump(optionArgs("Irineu"));
 
 /*
  * [ global access ] global $var
  */
 fullStackPHPClassSession("global access", __LINE__);
 
+$weight = 86;
+$height = 1.83;
+
+echo calcImc();
 
 /*
  * [ static arguments ] static $var
  */
 fullStackPHPClassSession("static arguments", __LINE__);
 
+$pay = payTotal(200);
+$pay = payTotal(150);
+$pay = payTotal(500);
+
+
+echo $pay;
 
 /*
  * [ dinamic arguments ] get_args | num_args
  */
 fullStackPHPClassSession("dinamic arguments", __LINE__);
+
+var_dump(myTeam("irineu", "vasco", "joão", "gabriel"));
