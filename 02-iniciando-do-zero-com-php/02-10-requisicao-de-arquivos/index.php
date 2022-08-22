@@ -8,6 +8,28 @@ fullStackPHPClassName("02.10 - Requisição de arquivos");
  */
 fullStackPHPClassSession("include, include_once", __LINE__);
 
+// include "file.php";
+// include "header.php";
+include __DIR__."/header.php";
+
+$profile = new StdClass();
+
+$profile->name = "irineu";
+$profile->company = "innovate";
+$profile->email = "irineu@innovate.com";
+
+// var_dump($profile);
+
+include __DIR__."/profile.php";
+
+$profile = new StdClass();
+
+$profile->name = "vasco";
+$profile->company = "innovate";
+$profile->email = "vasco@innovate.com";
+include __DIR__."/profile.php";
+
+
 
 /*
  * [ require ] https://php.net/manual/pt_BR/function.require.php
@@ -15,3 +37,7 @@ fullStackPHPClassSession("include, include_once", __LINE__);
  */
 fullStackPHPClassSession("require, require_once", __LINE__);
 
+// require "file.php";
+require __DIR__."/config.php";
+
+echo "<h1>".COURSE."</h1>";
